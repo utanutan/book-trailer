@@ -1,0 +1,23 @@
+{
+  "name": "book-trailer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx remotion studio src/index.ts",
+    "render": "npx remotion render src/index.ts BookTrailer out/trailer.mp4 --codec h264 --crf 18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@remotion/cli": "^4.0.438",
+    "@remotion/transitions": "^4.0.438",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.438",
+    "typescript": "^5.9.3"
+  }
+}
