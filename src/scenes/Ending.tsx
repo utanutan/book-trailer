@@ -142,7 +142,7 @@ export const Ending: React.FC = () => {
           {/* Title */}
           <h1
             style={{
-              fontSize: 72,
+              fontSize: 84,
               color: "#e8f0f0",
               fontFamily:
                 "'Noto Serif CJK JP', 'IPA明朝', serif",
@@ -174,7 +174,7 @@ export const Ending: React.FC = () => {
           {/* Subtitle */}
           <p
             style={{
-              fontSize: 26,
+              fontSize: 34,
               color: "rgba(180, 220, 240, 0.8)",
               fontFamily:
                 "'Noto Serif CJK JP', 'IPA明朝', serif",
@@ -189,7 +189,7 @@ export const Ending: React.FC = () => {
           {/* Author */}
           <p
             style={{
-              fontSize: 22,
+              fontSize: 28,
               color: "rgba(180, 220, 240, 0.5)",
               fontFamily:
                 "'Noto Serif CJK JP', 'IPA明朝', serif",
@@ -218,7 +218,7 @@ export const Ending: React.FC = () => {
             >
               <p
                 style={{
-                  fontSize: 24,
+                  fontSize: 32,
                   color: "rgba(180, 220, 240, 0.9)",
                   fontFamily:
                     "'Noto Serif CJK JP', 'IPA明朝', serif",

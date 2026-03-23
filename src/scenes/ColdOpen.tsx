@@ -94,7 +94,7 @@ export const ColdOpen: React.FC = () => {
       >
         <p
           style={{
-            fontSize: 42,
+            fontSize: 56,
             color: "rgba(180, 220, 240, 0.9)",
             fontFamily:
               "'Noto Serif CJK JP', 'IPA明朝', serif",

@@ -115,7 +115,7 @@ export const Climax: React.FC = () => {
       >
         <h1
           style={{
-            fontSize: 56,
+            fontSize: 68,
             color: "#e8f0f0",
             fontFamily:
               "'Noto Serif CJK JP', 'IPA明朝', serif",

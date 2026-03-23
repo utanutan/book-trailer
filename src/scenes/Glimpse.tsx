@@ -85,7 +85,7 @@ const ThemeCard: React.FC<{
       >
         <p
           style={{
-            fontSize: 32,
+            fontSize: 42,
             color: "rgba(180, 220, 240, 0.7)",
             fontFamily: "'Noto Serif CJK JP', 'IPA明朝', serif",
             letterSpacing: 10,
@@ -107,7 +107,7 @@ const ThemeCard: React.FC<{
 
         <p
           style={{
-            fontSize: 44,
+            fontSize: 58,
             color: "#e8f0f0",
             fontFamily: "'Noto Serif CJK JP', 'IPA明朝', serif",
             fontWeight: 500,

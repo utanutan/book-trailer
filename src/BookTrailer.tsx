@@ -26,18 +26,18 @@ export const BookTrailer: React.FC = () => {
         <ColdOpen />
       </Sequence>
 
-      {/* Scene 2: Personal - 自分ごと化 (0:05-0:15) */}
-      <Sequence from={150} durationInFrames={350}>
+      {/* Scene 2: Personal - 自分ごと化 (0:05-0:13) */}
+      <Sequence from={150} durationInFrames={250}>
         <Personal />
       </Sequence>
 
-      {/* Scene 3: Question - 問いの深化 (0:15-0:25) */}
-      <Sequence from={450} durationInFrames={330}>
+      {/* Scene 3: Question - 日本人と水 (0:13-0:25) */}
+      <Sequence from={390} durationInFrames={360}>
         <Question />
       </Sequence>
 
       {/* Scene 4: Glimpse - 本の中身ちら見せ (0:25-0:43) */}
-      <Sequence from={750} durationInFrames={540}>
+      <Sequence from={740} durationInFrames={540}>
         <Glimpse />
       </Sequence>
 
