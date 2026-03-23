@@ -70,6 +70,7 @@ export const Climax: React.FC = () => {
 
   return (
     <AbsoluteFill
+      lang="ja"
       style={{
         backgroundColor: "#0a0f1a",
       }}
@@ -114,38 +115,27 @@ export const Climax: React.FC = () => {
       >
         <h1
           style={{
-            fontSize: 80,
+            fontSize: 56,
             color: "#e8f0f0",
             fontFamily:
               "'Noto Serif CJK JP', 'IPA明朝', serif",
             fontWeight: 700,
-            letterSpacing: 10,
+            letterSpacing: 8,
             opacity: mainOpacity,
             transform: `scale(${mainScale})`,
             textShadow:
               "0 0 40px rgba(26, 60, 52, 0.8), 0 4px 20px rgba(0, 0, 0, 0.5)",
             margin: 0,
+            padding: "0 120px",
             textAlign: "center",
+            lineHeight: 1.6,
           }}
         >
-          水の文化を、次の世代へ
+          水の文化を、
+          <br />
+          あなたの言葉で語れるようになる
         </h1>
 
-        <p
-          style={{
-            fontSize: 36,
-            color: "rgba(180, 220, 240, 0.8)",
-            fontFamily:
-              "'Noto Serif CJK JP', 'IPA明朝', serif",
-            letterSpacing: 6,
-            opacity: subOpacity,
-            transform: `translateY(${subY}px)`,
-            margin: 0,
-            textAlign: "center",
-          }}
-        >
-          あなたの言葉で、水を語れるようになる
-        </p>
       </AbsoluteFill>
     </AbsoluteFill>
   );

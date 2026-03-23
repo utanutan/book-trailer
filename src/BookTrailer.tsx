@@ -1,41 +1,52 @@
 import React from "react";
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile, interpolate } from "remotion";
 import { ColdOpen } from "./scenes/ColdOpen";
-import { TitleReveal } from "./scenes/TitleReveal";
-import { ChapterFlash } from "./scenes/ChapterFlash";
-import { KeyQuotes } from "./scenes/KeyQuotes";
+import { Personal } from "./scenes/Personal";
+import { Question } from "./scenes/Question";
+import { Glimpse } from "./scenes/Glimpse";
 import { Climax } from "./scenes/Climax";
 import { Ending } from "./scenes/Ending";
 
 export const BookTrailer: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: "#0a0f1a" }}>
-      {/* Layer 1: Cold Open - runs 0-150, overlaps with TitleReveal */}
-      <Sequence from={0} durationInFrames={150}>
+      {/* BGM - cinematic pad, fade in/out */}
+      <Audio
+        src={staticFile("bgm.wav")}
+        volume={(f) =>
+          interpolate(f, [0, 120, 1650, 1800], [0, 0.2, 0.2, 0], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          })
+        }
+      />
+
+      {/* Scene 1: Hook (0:00-0:05) */}
+      <Sequence from={0} durationInFrames={170}>
         <ColdOpen />
       </Sequence>
 
-      {/* Layer 2: Title Reveal - starts at 90, overlaps cold open's end */}
-      <Sequence from={90} durationInFrames={210}>
-        <TitleReveal />
+      {/* Scene 2: Personal - 自分ごと化 (0:05-0:15) */}
+      <Sequence from={150} durationInFrames={350}>
+        <Personal />
       </Sequence>
 
-      {/* Layer 3: Chapter Flash - starts at 270 */}
-      <Sequence from={270} durationInFrames={540}>
-        <ChapterFlash />
+      {/* Scene 3: Question - 問いの深化 (0:15-0:25) */}
+      <Sequence from={450} durationInFrames={330}>
+        <Question />
       </Sequence>
 
-      {/* Layer 4: Key Quotes - starts at 780, overlaps chapter flash end */}
-      <Sequence from={780} durationInFrames={510}>
-        <KeyQuotes />
+      {/* Scene 4: Glimpse - 本の中身ちら見せ (0:25-0:43) */}
+      <Sequence from={750} durationInFrames={540}>
+        <Glimpse />
       </Sequence>
 
-      {/* Layer 5: Climax - starts at 1260, overlaps key quotes end */}
-      <Sequence from={1230} durationInFrames={300}>
+      {/* Scene 5: Climax (0:43-0:50) */}
+      <Sequence from={1280} durationInFrames={240}>
         <Climax />
       </Sequence>
 
-      {/* Layer 6: Ending with book cover - starts at 1500 */}
+      {/* Scene 6: Ending - タイトルがオチ (0:50-1:00) */}
       <Sequence from={1500} durationInFrames={300}>
         <Ending />
       </Sequence>
